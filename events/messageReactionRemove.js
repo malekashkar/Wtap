@@ -5,17 +5,6 @@ module.exports = async(client, reaction, user) => {
     if(reaction.message.partial) reaction.message.fetch();
 
     let message = reaction.message;
-    let member = message.guild.members.cache.get(user.id);
-
-    let role1 = message.guild.roles.cache.get(client.config.wtapRole);
-    let role2 = message.guild.roles.cache.get(client.config.upVoteRole);
-
-    if(message.channel.id === client.config.rolesChannel) {
-        reaction.users.remove(user);
-
-        if(reaction.emoji.name === "wtap") member.roles.add(role1);
-        else if(reaction.emoji.name === "upvote") member.roles.add(role2);
-    }
 
     if(message.channel.id !== client.config.ticket) return;
     if(reaction.emoji.name !== "🎫") return;

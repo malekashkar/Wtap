@@ -14,9 +14,9 @@ exports.run = async(client, message, args) => {
 
     if(!topic || !msg) return message.channel.send(embed(`**Usage:** ${client.config.prefix}announce <topic> ^ <message>`));
 
-    let embed = new Discord.MessageEmbed()
+    let nEmbed = new Discord.MessageEmbed()
     .setColor(client.config.color)
     .setTitle(topic)
     .setDescription(msg)
-    announce.send(embed);
+    announce.send(nEmbed);
 }

@@ -1,9 +1,9 @@
 const mongoose = require("mongoose");
 
-const Users = new mongoose.Schema({
+const Verified = new mongoose.Schema({
   _id: String,
-  discord: {type: Number, default: 0},
-  time: {type: Number, default: Date.now()},
+  minecraft: String,
+  discord: String
 });
 
-module.exports = mongoose.model("User", Users);
+module.exports = mongoose.model("Verified", Verified);

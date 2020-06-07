@@ -1,0 +1,28 @@
+{
+  "name": "wtap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dep0sit/Wtap.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dep0sit/Wtap/issues"
+  },
+  "homepage": "https://github.com/Dep0sit/Wtap#readme",
+  "dependencies": {
+    "discord.js": "^12.2.0",
+    "enmap": "^5.2.9",
+    "fs": "0.0.1-security",
+    "moment": "^2.26.0",
+    "mongoose": "^5.9.18",
+    "node-fetch": "^2.6.0"
+  }
+}

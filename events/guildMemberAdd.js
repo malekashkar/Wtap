@@ -11,4 +11,6 @@ module.exports = async(client, member) => {
     .setFooter(`Members: ${member.guild.memberCount}`)
     .setTimestamp()
     welcome.send(embed);
+
+    member.guild.channels.cache.get(`718878374776406119`).setName(`Discord Count: ${member.guild.memberCount}`);
 }
